@@ -1,0 +1,545 @@
+/* Общие стили */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Стили для заголовков */
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  /* Стили для навигации */
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    
+  }
+  
+  nav ul li {
+    padding: 10px;
+    
+  }
+  
+  /* Стили для главной секции */
+  
+  .hero {
+    background-image: url("/img/fone-stena.jpg"); /* Замените "путь_к_изображению.jpg" на путь к вашему изображению двери */
+    background-size: cover; /* Масштабирует изображение, чтобы оно занимало всю доступную область */
+    background-position: center; /* Выравнивает изображение по центру */
+    text-align: center;
+    padding: 50px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Добавление тени: горизонтальное смещение, вертикальное смещение, размытие, цвет */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  /* Стили для каталога дверей */
+  
+  .catalog {
+    padding: 50px;
+    background-image: url("/img/fone-stena.jpg"); /* Замените "путь_к_изображению.jpg" на путь к вашему изображению двери */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  
+  .door-item {
+    margin-bottom: 30px;
+    
+  }
+  
+  .door-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Стили для раздела "О нас" */
+  
+  .about-us {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  /* Стили для раздела "Контакты" */
+  
+  .contact {
+    padding: 50px;
+  }
+  
+  /* Стили для подвала */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  nav ul li a.active {
+    font-weight: normal
+  }
+
+  /* СЛАЙДЕР */ 
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .itc-slider__items {
+    counter-reset: slide;
+  }
+
+  .itc-slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    counter-increment: slide;
+    height: 250px;
+    position: relative;
+  }
+
+  .itc-slider__item::before {
+    content: counter(slide) "/5";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .itc-slider__item:nth-child(1) {
+    background-color: #f44336;
+  }
+
+  .itc-slider__item:nth-child(2) {
+    background-color: #9c27b0;
+  }
+
+  .itc-slider__item:nth-child(3) {
+    background-color: #3f51b5;
+  }
+
+  .itc-slider__item:nth-child(4) {
+    background-color: #03a9f4;
+  }
+
+  .itc-slider__item:nth-child(5) {
+    background-color: #4caf50;
+  }
+
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .door-item {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Цвет прозрачного стекла */
+   
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень */
+    transition: transform 0.3s;
+  }
+  
+  
+  .door-item:hover {
+    transform: scale(1.05);
+    
+  }
+  
+  .door-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .door-item h3 {
+    margin-top: 10px;
+  }
+  
+  .door-item p {
+    margin-bottom: 10px;
+  }
+
+
+  /* Главная стили  */
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 40px; /* Измените размер шрифта на нужный */
+    width: 50px; /* Измените ширину на нужную */
+    height: 50px; /* Измените высоту на нужную */
+  }
+  .swiper-pagination {
+transform: translateY(-10px); /* Измените значение на нужное вам смещение вниз */
+}
+
+.swiper-container {
+  width: 80%;
+  max-width: 1500px; /* Измените на нужную вам максимальную ширину */
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Lora', serif;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 25px;
+background-color: rgba(255, 255, 255, 0.3);
+padding: 20px;
+box-sizing: border-box;
+cursor: pointer;
+}
+
+.catalog {
+text-align: center;
+position: relative;
+}
+
+.catalog > .swiper-container {
+margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+.catalog > h2 {
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+padding: 10px;
+font-family: 'Lora', serif;
+font-size: 36px;
+font-weight: bold;
+text-transform: uppercase;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.door-details {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+max-width: 90%;
+background-color: rgba(255, 255, 255, 0.8); /* Менее прозрачный цвет */
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border: 2px solid #000;
+z-index: 9999;
+
+
+}
+
+.door-details button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.door-details button:hover {
+  background-color: #45a049;
+}
+.door-details.show {
+display: block;
+}
+
+.door-details img {
+width: 100%;
+max-height: 300px;
+object-fit: contain;
+margin-bottom: 10px;
+}
+
+.door-details .door-close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+font-weight: bold;
+cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+.door-details .door-title {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+color: #070707;
+font-family: 'Lora', serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+.door-details .door-specs li {
+margin-bottom: 5px;
+font-family: 'Lora', serif;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 254, 254);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {
+color: rgb(8, 8, 8); /* Измените цвет на желаемый */
+}
+.slideshow {
+position: relative;
+width: 688px;
+height: 460px; /* Adjust the height of the slideshow as per your requirement */
+overflow: hidden;
+margin: 50px auto 0; /* Adjust the margin-top value to move the slideshow down */
+padding: 10px; /* Add spacing around the slideshow to create space between the border and content */
+box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.479); /* Add a drop shadow with the desired properties */
+}
+
+
+.slideshow img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 0.5s ease-in-out;
+}
+
+.slideshow img:first-child {
+opacity: 1;
+}
+
+@keyframes fade {
+0% {
+  opacity: 0;
+}
+20% {
+  opacity: 1;
+}
+33% {
+  opacity: 1;
+}
+53% {
+  opacity: 0;
+}
+100% {
+  opacity: 0;
+}
+}
+
+.slideshow img:nth-child(1) {
+animation: fade 12s infinite;
+}
+
+.slideshow img:nth-child(2) {
+animation: fade 12s infinite 4s;
+}
+
+.slideshow img:nth-child(3) {
+animation: fade 12s infinite 8s;
+}
+
+
+
+
+
+header h1 {
+color: rgb(255, 255, 255);
+font-family: 'Montserrat', sans-serif;
+/* background-color: #333; */
+}
+header {
+background-color: #333;
+
+}
+
+
+
+  
+
+  
+  
+.hero {
+  position: relative;
+  background-color: #222;
+  padding: 20px;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px #090808;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-container {
+  display: none;
+} 
+  /* Стили для основного заголовка */
+  header {
+    background-color: #333;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #000;
+    display: flex; /* Добавили display: flex; для хедера */
+    align-items: center; /* Выравниваем элементы по вертикали */
+  }
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-left: 10px; /* Регулируйте значение по вашему усмотрению */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Стили для навигации */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Стили для выпадающего меню */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+
+
+.logo-container {
+  margin-right: 10px; /* Добавили отступ справа между логотипом и навигацией (измените значение по вашему усмотрению) */
+}
+
+.logo {
+  width: 100px; /* Измените ширину в соответствии с размерами вашего логотипа */
+  height: auto; /* Чтобы сохранить пропорции изображения */
+}

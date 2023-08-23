@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/html/css/styles.css">
+	<title>Твердый Знак</title>
+	<style>
+		/* Стили для страницы контактов */
+		body {
+			background-image: url(/img/fone-stena.jpg);
+			background-color: #f2f2f2;
+			color: #333;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.contact {
+			text-align: center;
+			margin-top: 50px;
+			font-family: outfit-c;
+			src: url(/vortota-scroll/fonts/outfit-regular.woff2);
+		}
+
+		.contact h2 {
+			font-size: 24px;
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+
+		.contact p {
+			font-size: 16px;
+			color: #ffffff;
+			margin-bottom: 20px;
+		}
+
+		.contact ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+
+		.contact li {
+			font-size: 18px;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+
+		.contact form div {
+			margin-bottom: 10px;
+		}
+
+		.contact label {
+			display: block;
+			font-size: 16px;
+			color: #ffffff;
+			margin-bottom: 5px;
+		}
+
+		.contact input[type="text"],
+		.contact input[type="email"],
+		.contact textarea {
+			width: 40%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		.contact button {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.contact button:hover {
+			background-color: #333;
+		}
+
+		.maps-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.map-wrapper {
+			width: 40%;
+			height: 300px;
+			margin-bottom: 20px;
+			overflow: hidden;
+			border: 1px solid #e6e6e6;
+			border-radius: 8px;
+			box-sizing: border-box;
+		}
+
+		.map-wrapper iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+		.reviews-wrapper {
+			width: 40%;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			border: 1px solid #e6e6e6;
+			border-radius: 8px;
+			box-sizing: border-box;
+		}
+
+		.reviews-wrapper iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+		.reviews-wrapper a {
+			box-sizing: border-box;
+			text-decoration: none;
+			color: #b3b3b3;
+			font-size: 10px;
+			font-family: YS Text, sans-serif;
+			padding: 0 20px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			left: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: block;
+			max-height: 14px;
+			white-space: nowrap;
+			padding: 0 16px;
+			box-sizing: border-box;
+		}
+
+		.dropdown-content {
+display: none;
+position: absolute;
+background-color: #333;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgb(255, 254, 254);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown-content a:hover {
+color: rgb(8, 8, 8); /* Измените цвет на желаемый */
+
+}
+header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav ul li {
+      list-style-type: none;
+    }
+
+    header nav ul li a {
+      display: block;
+      padding: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      /* border: 1px solid #000000;
+      border-radius: 4px; */
+    }
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<!-- Логотип -->
+		<a href="/html/index.html">
+		  <img src="/img/SVGG.svg" alt="Логотип" class="logo">
+		</a>
+	  
+		<!-- Заголовок и навигация -->
+	 
+		<nav>
+		  <ul>
+			<li><a href="/index2.html">Главная</a></li>
+			<li class="dropdown">
+			  <a href="#">Каталог</a>
+			  <div class="dropdown-content">
+				<a href="">Наши работы </a>
+				<a href="/html/catalog-zamki-furnitura.html">Замки и фурнитура</a>
+				<a href="/html/page-3.html">Прочие изделия</a>
+			  </div>
+			</li>
+		   
+		  
+			<li><a href="/html/page-38.html" class="active">Контакты</a></li>
+		  </ul>
+		</nav>
+	  </header>
+
+	<main>
+		<section class="contact">
+			<h2>Контакты</h2>
+			<p>Свяжитесь с нами, чтобы узнать больше о наших продуктах.</p>
+			<br> <br>
+			<ul>
+				<li>353380, Краснодарский край г. Крымск</li>
+				<li>ул. Маршала Жукова д. 53</li>
+				<li>тел.: 8 952 812-99-01, (86131) 5-24-54</li>
+				<li>e-mail: dverikubani@mail.ru</li>
+				<li>Режим работы: Пн-Пт с 8:00 до 17:00</li>
+			</ul>
+			<br>
+			<div class="maps-container">
+				<div class="map-wrapper">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?ll=38.011357%2C44.934828&mode=search&oid=148326631347&ol=biz&sctx=ZAAAAAgBEAAaKAoSCROZucDld0NAEelDF9S3mkdAEhIJfEYiNIKNzz8RZY16iEZ3uD8iBgABAgMEBSgKOABAywdIAWoCcnWdAc3MTD2gAQCoAQC9AVy88c7CAQazj9PHqATqAQDyAQD4AQCCAnfQl9Cw0LLQvtC0INGB0YLQsNC70YzQvdGL0YUg0LTQstC10YDQtdC5INCi0LLQtdGA0LTRi9C5INC30L3QsNC6INCzLiDQmtGA0YvQvNGB0LosINGD0Lsu0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA1M4oCAJICBTEwOTk3mgIMZGVza3RvcC1tYXBz&sll=38.011357%2C44.934828&sspn=0.061626%2C0.024904&text=%D0%97%D0%B0%D0%B2%D0%BE%D0%B4%20%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9%20%D0%A2%D0%B2%D0%B5%D1%80%D0%B4%D1%8B%D0%B9%20%D0%B7%D0%BD%D0%B0%D0%BA%20%D0%B3.%20%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%2C%20%D1%83%D0%BB.%D0%9C%D0%B0%D1%80%D1%88%D0%B0%D0%BB%D0%B0%20%D0%96%D1%83%D0%BA%D0%BE%D0%B2%D0%B0%2C%2053&z=15"
+						allowfullscreen="true"></iframe>
+				</div>
+				<div class="reviews-wrapper">
+					<iframe src="https://yandex.ru/maps-reviews-widget/148326631347?comments"></iframe>
+					<a href="https://yandex.ru/maps/org/tverdy_znak/148326631347/" target="_blank">Твердый знак на карте
+						Крымска — Яндекс Карты</a>
+				</div>
+			</div>
+			<br>
+			<p>Получить интересующую Вас информацию Вы также можете заполнив форму ниже:</p>
+			<form id="contactForm">
+				<div>
+					<label for="name">Имя:</label>
+					<input type="text" id="name" required>
+				</div>
+				<div>
+					<label for="city">Город:</label>
+					<input type="text" id="city" required>
+				</div>
+				<div>
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" required>
+				</div>
+				<div>
+					<label for="question">Вопрос:</label>
+					<textarea id="question" required></textarea>
+				</div>
+				<button type="submit">Отправить</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<!-- Здесь может быть ваш подвал сайта -->
+	</footer>
+	<script>
+		// Wait for the page to load
+		window.addEventListener('load', function() {
+		  // Remove the door animation after it finishes
+		  const doorAnimation = document.querySelector('.door-animation');
+		  doorAnimation.addEventListener('animationend', function() {
+			doorAnimation.parentNode.removeChild(doorAnimation);
+		  });
+		});
+	  </script>
+	  
+</body>
+<script src="/html/js/main.js"> 
+</script>
+
+</html>

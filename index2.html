@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap"> --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/html/css/styles.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <title>Твердый Знак</title>
+  <style>
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav ul li {
+      list-style-type: none;
+    }
+
+    header nav ul li a {
+      display: block;
+      padding: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      /* border: 1px solid #000000;
+      border-radius: 4px; */
+    }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <!-- Логотип -->
+    <a href="/index2.html">
+      <img  src="/img/SVGG.svg" alt="Логотип" class="logo">
+    </a>
+  
+    <!-- Заголовок и навигация -->
+ 
+    <nav>
+      <ul>
+        <li><a href="/index2.html">Главная</a></li>
+        <li class="dropdown">
+          <a href="#">Каталог</a>
+          <div class="dropdown-content">
+            <a href="">Наши работы </a>
+            <a href="/html/catalog-zamki-furnitura.html">Замки и фурнитура</a>
+            <a href="/html/page-3.html">Прочие изделия</a>
+          </div>
+        </li>
+       
+      
+        <li><a href="/html/page-38.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>
+          Твердый знак
+        </h1>
+        <p>
+          Лучшие двери - делаются&nbsp;руками!
+        </p>
+      </div>
+        </p>
+      </div>
+      <div class="slideshow">
+        <img src="/img/slideShowdoor1jp.png" alt="Фото 1">
+        <img src="/img/slideShowdoor2png.png" alt="Фото 2">
+        <img src="/img/slideShowdoor3.png" alt="Фото 3">
+        <img src="/img/slideShowdoor4j.png" alt="Фото 4">
+        <img src="/img/slideShowdoor5j.png" alt="Фото 5">
+      </div>
+    </section>
+    
+    
+    
+    <section class="catalog">
+      <h2>Каталог дверей</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide door-item" onclick="showDoorDetails(1)">
+            <img src="/img/служебная.png" alt="Дверь 1">
+            <h3>Служебная</h3>
+            <p>10000 Руб.</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(2)">
+            <img src="/img/эконом2.png" alt="Дверь 2">
+            <h3>Эконом 2</h3>
+            <p>15000 Руб.</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(3)">
+            <img src="/img/эконом3.png" alt="Дверь 3">
+            <h3>эконом 3</h3>
+            <p>20000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(4)">
+            <img src="/img/лидер.png" alt="Дверь 4">
+            <h3>Лидер</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(5)">
+            <img src="/img/лидерОбъем.png" alt="Дверь 4">
+            <h3>Лидер Объем</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(6)">
+            <img src="/img/бронит.png" alt="Дверь 4">
+            <h3>Бронит</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(7)">
+            <img src="/img/молния.png" alt="Дверь 4">
+            <h3>Молния</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(8)">
+            <img src="/img/стрела.png" alt="Дверь 4">
+            <h3>Стрела</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(9)">
+            <img src="/img/Винтаж.png" alt="Дверь 4">
+            <h3>Винтажк</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(10)">
+            <img src="/img/рубеж.png" alt="Дверь 4">
+            <h3>Рубеж</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(11)">
+            <img src="/img/комфорт.png" alt="Дверь 4">
+            <h3>Комфорт</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(12)">
+            <img src="/img/викинг.png" alt="Дверь 4">
+            <h3>Викинг</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(13)">
+            <img src="/img/гамма.png" alt="Дверь 4">
+            <h3>Гамма</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(14)">
+            <img src="/img/восток.png" alt="Дверь 4">
+            <h3>Восток</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(15)">
+            <img src="/img/коллекция-фантазия.png" alt="Дверь 4">
+            <h3>Коллекция фантазия</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(16)">
+            <img src="/img/коллекция-престиж.png" alt="Дверь 4">
+            <h3>Коллекция престиж</h3>
+            <p>35000 Руб</p>
+          </div>
+          <div class="swiper-slide door-item" onclick="showDoorDetails(17)">
+            <img src="/img/коллекция=эллегия.png" alt="Дверь 4">
+            <h3>Коллекция эллегия </h3>
+            <p>35000 Руб</p>
+          </div>
+          <!-- Добавьте дополнительные элементы дверей по аналогии -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2>О нас</h2>
+      <p>«Твердый знак» – это одно из первых производственных предприятий в Краснодарском крае включающее в себя все циклы создания современных входных дверей, отвечающих требованиям европейских стандартов. Надежность, качество, дизайн – главные свойства дверей «Твердый знак». Компания обеспечивает эти параметры на высоком уровне, используя современные технологии и высокотехнологичное оборудование, что позволяет производить двери с лучшими показателями пригодными к климатическим условиям разных регионов России. Мы используем только качественные материалы и комплектующие от ведущих российских и зарубежных производителей.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Контакты</h2>
+      <p>Свяжитесь с нами, чтобы узнать больше о наших продуктах.</p>
+      <ul>
+				<li>353380, Краснодарский край г. Крымск</li>
+				<li>ул. Маршала Жукова д. 53</li>
+				<li>тел.: 8 952 812-99-01, (86131) 5-24-54</li>
+				<li>e-mail: dverikubani@mail.ru</li>
+				<li>Режим работы: Пн-Пт с 8:00 до 17:00</li>
+			</ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Двери Кубани</p>
+  </footer>
+  
+  <div class="door-details" id="doorDetails">
+    <span class="door-close" onclick="hideDoorDetails()">×</span>
+    <img src="" alt="" id="doorImage">
+    <h3 class="door-title" id="doorTitle"></h3>
+    <ul class="door-specs" id="doorSpecs">
+      <!-- Здесь будут выводиться характеристики двери -->
+    </ul>
+    <button onclick="placeOrder()">Подробнее о двери</button>
+</div>
+  
+  
+  <script src="/html/js/swiper-bundle.js"></script>
+</body>
+</html>

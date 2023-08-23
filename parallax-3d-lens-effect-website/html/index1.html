@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Твердый Знак</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+	<script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+	<script src="js/app.js" defer></script>
+	<script src="libs/rain.js" defer></script>
+</head>
+
+<body>
+
+	<!-- <div class="logo" style="background-image: url(img/logo2.jpg)"></div> -->
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1"
+				style="background-image: url(img/1625539720_32-kartinkin-com-p-kovka-fon-krasivie-foni-35.jpg )"></div>
+			<!-- <div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div> -->
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<h1>Твердый знак <span> ВХОДНЫЕ ДВЕРИ</span></h1>
+
+					<div class="hero-content__p">Твердый знак: качество, которое прослужит долго!</div>
+					<a href="/index2.html"><button id="shop-button" class="button-start">Перейти в магазин</button></a>
+
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<!-- <canvas class="rain"></canvas> -->
+			</div>
+			<!-- <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div> -->
+			<!-- <div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div> -->
+		</div>
+	</section>
+<script>// Ожидаем загрузку DOM-дерева
+	document.addEventListener('DOMContentLoaded', function() {
+	  // Находим кнопку "Перейти в магазин" по идентификатору
+	  var shopButton = document.getElementById('shop-button');
+	  
+	  // Добавляем обработчик события клика на кнопку
+	  shopButton.addEventListener('click', function(event) {
+		event.preventDefault(); // Отменяем стандартное поведение ссылки
+		
+		// Добавляем анимацию или переход на другую страницу
+		// Например, можно использовать плавный переход с задержкой:
+		setTimeout(function() {
+		  window.location.href = "/html/index.html"; // Замените "/html/index.html" на URL целевой страницы
+		}, 500); // Задержка в миллисекундах (в данном случае 0.5 секунды)
+	  });
+	});
+	</script>
+</body>

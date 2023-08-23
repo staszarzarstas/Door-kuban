@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora&display=swap"> --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/html/css/styles.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <title>Твердый Знак</title>
+  <style>
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav ul li {
+      list-style-type: none;
+    }
+
+    header nav ul li a {
+      display: block;
+      padding: 10px;
+      font-size: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      /* border: 1px solid #000000;
+      border-radius: 4px; */
+    }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <!-- Логотип -->
+    <a href="/index2.html">
+      <img  src="/img/SVGG.svg" alt="Логотип" class="logo">
+    </a>
+  
+    <!-- Заголовок и навигация -->
+ 
+    <nav>
+      <ul>
+        <li><a href="/index2.html">Главная</a></li>
+        <li class="dropdown">
+          <a href="#">Каталог</a>
+          <div class="dropdown-content">
+            <a href="">Наши работы </a>
+            <a href="/html/catalog-zamki-furnitura.html">Замки и фурнитура</a>
+            <a href="/html/page-3.html">Прочие изделия</a>
+          </div>
+        </li>
+       
+      
+        <li><a href="/html/page-38.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <h1> Твердый знак</h1>
+        <p>качество, которое прослужит долго!"</p>
+      </div>
+      <div class="slideshow">
+        <img src="/img/slideShowdoor1jp.png" alt="Photo 1">
+        <img src="/img/slideShowdoor2png.png" alt="Photo 2">
+        <img src="/img/slideShowdoor3.png" alt="Photo 3">
+        <img src="/img/slideShowdoor4j.png" alt="Photo 4">
+        <img src="/img/slideShowdoor5j.png" alt="Photo 5">
+      </div>
+  
+          <!-- Добавьте дополнительные элементы дверей по аналогии -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2>О нас</h2>
+      <p>Мы являемся ведущими поставщиками качественных дверей уже более 10 лет. Наша компания предлагает широкий выбор
+        дверей различных стилей и материалов.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Контакты</h2>
+      <p>Свяжитесь с нами, чтобы узнать больше о наших продуктах.</p>
+      <ul>
+        <li>Телефон: 123-456-7890</li>
+        <li>Email: info@example.com</li>
+        <li>Адрес: ул. Примерная, 123, Город</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2023 Двери Всемирный</p>
+  </footer>
+  <div class="door-details" id="doorDetails">
+    <span class="door-close" onclick="hideDoorDetails()">×</span>
+    <img src="" alt="" id="doorImage">
+    <h3 class="door-title" id="doorTitle"></h3>
+    <ul class="door-specs" id="doorSpecs">
+      <!-- Здесь будут выводиться характеристики двери -->
+    </ul>
+  </div>
+  <script src="/html/js/swiper-bundle.js"></script>
+</body>
+</html>
